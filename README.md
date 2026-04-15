@@ -1,57 +1,62 @@
-# Jeu du Pendu (C#)
+# Jeu du Pendu – C#
 
-Petit projet en C# qui implémente le jeu classique du **pendu** en console.
+## Description
 
-Le joueur doit deviner un mot en proposant des lettres une par une.  
-Chaque mauvaise lettre fait perdre une vie.
+Ce projet est une implémentation du **jeu du pendu** en **C# dans la console**.
+Le joueur doit deviner un mot aléatoire en proposant des lettres une par une.
+
+À chaque mauvaise lettre, une partie du pendu apparaît en **ASCII**.
+Le joueur perd lorsqu'il n'a plus de vies.
 
 ---
 
 ## Fonctionnalités
 
-- Choix aléatoire d’un mot
-- Système de vies
-- Affichage du mot caché
-- Liste des lettres déjà utilisées
-- Vérification des entrées utilisateur
-- Messages de victoire ou de défaite
+* Sélection aléatoire d’un mot
+* Saisie d’une lettre par le joueur
+* Vérification des lettres proposées
+* Affichage du mot caché
+* Affichage des lettres déjà utilisées
+* Gestion des vies
+* Dessin du pendu en ASCII
+* Message de victoire ou de défaite
 
 ---
 
 ## Structure du projet
 
-
+```
 pendu_c-
 │
-├── Program.cs # Point d'entrée du programme
-├── Jeu.cs # Logique principale du jeu
-├── Utils.cs # Fonctions utilitaires (validation, vérification des lettres)
-├── pendu.csproj # Configuration du projet .NET
+├── Program.cs
+├── Jeu.cs
+├── Utils.cs
+├── pendu.csproj
 └── README.md
-
+```
 
 ### Description des fichiers
 
 **Program.cs**
 
-Contient la fonction `Main()` qui lance le jeu.
+Contient le point d'entrée du programme (`Main`) qui lance le jeu.
 
 **Jeu.cs**
 
-Contient la classe principale `Jeu` qui gère :
+Contient la logique principale du jeu :
 
-- l'initialisation
-- la boucle du jeu
-- l'affichage de l'état
-- la gestion des vies
-- la fin de partie
+* choix du mot
+* boucle du jeu
+* gestion des vies
+* affichage de l'état du jeu
+* affichage du pendu ASCII
 
 **Utils.cs**
 
-Contient des méthodes utilitaires :
+Contient les fonctions utilitaires :
 
-- demander une lettre au joueur
-- vérifier si la lettre est dans le mot
+* demander une lettre au joueur
+* vérifier si une lettre est dans le mot
 
 ---
 
@@ -59,13 +64,13 @@ Contient des méthodes utilitaires :
 
 ### Prérequis
 
-- .NET SDK installé (version récente)
+Installer **.NET SDK**
 
 Vérifier avec :
 
-
+```
 dotnet --version
-
+```
 
 ---
 
@@ -73,39 +78,36 @@ dotnet --version
 
 Dans le dossier du projet :
 
-
+```
 dotnet run
-
+```
 
 ---
 
 ## Exemple de jeu
 
+```
+====================
+Jeu du pendu
+====================
 
-******** Jeu du pendu ********
-
-Mot : _ _ _ _ _ _ _
-Vies restantes : 5
+Mot : _ _ _ _ _ _
+Vies restantes : 6
 Lettres testées :
 
-Propose une lettre : a
-Bonne lettre !
+Etat du pendu :
 
-Mot : _ a _ _ _ _ _
-
-
----
-
-## Améliorations possibles
-
-- Ajouter un dessin du pendu (ASCII)
-- Ajouter plusieurs niveaux de difficulté
-- Charger les mots depuis un fichier
-- Ajouter un mode multijoueur
-- Ajouter un système de score
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+```
 
 ---
 
-## Auteur 
-Safaa zemmar 
-Nissa karadag
+## Auteur
+Safaa Zemmar 
+Nissa Karzadag 

@@ -14,9 +14,9 @@ class Jeu
     };
 
     // Variables de jeu
-    private string motSecret;
-    private char[] motCache;
-    private int vies = 5;
+    private string motSecret = "";
+    private char[] motCache = Array.Empty<char>();
+    private int vies = 6;
 
     // Liste dynamique pour stocker les lettres déjà testées
     private List<char> lettresTestees = new List<char>();
@@ -67,15 +67,94 @@ class Jeu
     // Affiche le mot caché, les vies restantes et les lettres testées
     private void AfficherEtat()
     {
+        Console.WriteLine("\n====================");
+        Console.WriteLine("Jeu du pendu");
+        Console.WriteLine("====================");
+
         // Affiche le mot caché avec des espaces entre les lettres
-        Console.WriteLine("\nMot : " + string.Join(" ", motCache));
+        Console.WriteLine("Mot : " + string.Join(" ", motCache));
         Console.WriteLine("Vies restantes : " + vies);
         Console.WriteLine("Lettres testées : " + string.Join(", ", lettresTestees));
+
+        Console.WriteLine("\nEtat du pendu :");
+        AfficherPendu();
+    }
+
+    // Affiche le pendu en ASCII selon le nombre de vies restantes
+    private void AfficherPendu()
+    {
+        string[] etapes =
+        {
+            @"
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========",
+            @"
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+========="
+        };
+
+        int index = 6 - vies;
+        Console.WriteLine(etapes[index]);
     }
 
     // Affiche le message de fin de jeu en fonction du résultat
     private void FinDeJeu(bool gagne)
     {
+        Console.WriteLine("\n====================");
+        Console.WriteLine("Fin de la partie");
+        Console.WriteLine("====================");
+        AfficherPendu();
+
         if (gagne)
         {
             Console.WriteLine("\nBravo ! Tu as trouvé le mot : " + motSecret);

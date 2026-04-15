@@ -9,7 +9,7 @@ class Utils
         while (true)
         {
             Console.Write("\nPropose une lettre : ");
-            string input = Console.ReadLine().ToLower();
+            string input = Console.ReadLine()?.ToLower() ?? "";
 
             if (input.Length != 1)
             {
