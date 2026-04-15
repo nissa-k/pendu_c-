@@ -12,3 +12,18 @@ C:\Users\karab\OneDrive\Documents\cours bachelor\c#\pendu\obj\Debug\net10.0\refi
 C:\Users\karab\OneDrive\Documents\cours bachelor\c#\pendu\obj\Debug\net10.0\pendu.pdb
 C:\Users\karab\OneDrive\Documents\cours bachelor\c#\pendu\obj\Debug\net10.0\pendu.genruntimeconfig.cache
 C:\Users\karab\OneDrive\Documents\cours bachelor\c#\pendu\obj\Debug\net10.0\ref\pendu.dll
+C:\Users\safaa\pendu_c-\bin\Debug\net10.0\pendu.exe
+C:\Users\safaa\pendu_c-\bin\Debug\net10.0\pendu.deps.json
+C:\Users\safaa\pendu_c-\bin\Debug\net10.0\pendu.runtimeconfig.json
+C:\Users\safaa\pendu_c-\bin\Debug\net10.0\pendu.dll
+C:\Users\safaa\pendu_c-\bin\Debug\net10.0\pendu.pdb
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.AssemblyInfoInputs.cache
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.AssemblyInfo.cs
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.csproj.CoreCompileInputs.cache
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.sourcelink.json
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.dll
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\refint\pendu.dll
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.pdb
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\pendu.genruntimeconfig.cache
+C:\Users\safaa\pendu_c-\obj\Debug\net10.0\ref\pendu.dll

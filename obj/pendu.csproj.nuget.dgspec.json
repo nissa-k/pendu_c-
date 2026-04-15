@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karab\\OneDrive\\Documents\\cours bachelor\\c#\\pendu\\pendu.csproj": {}
+    "C:\\Users\\safaa\\pendu_c-\\pendu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karab\\OneDrive\\Documents\\cours bachelor\\c#\\pendu\\pendu.csproj": {
+    "C:\\Users\\safaa\\pendu_c-\\pendu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karab\\OneDrive\\Documents\\cours bachelor\\c#\\pendu\\pendu.csproj",
+        "projectUniqueName": "C:\\Users\\safaa\\pendu_c-\\pendu.csproj",
         "projectName": "pendu",
-        "projectPath": "C:\\Users\\karab\\OneDrive\\Documents\\cours bachelor\\c#\\pendu\\pendu.csproj",
-        "packagesPath": "C:\\Users\\karab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karab\\OneDrive\\Documents\\cours bachelor\\c#\\pendu\\obj\\",
+        "projectPath": "C:\\Users\\safaa\\pendu_c-\\pendu.csproj",
+        "packagesPath": "C:\\Users\\safaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\safaa\\pendu_c-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karab\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\safaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
