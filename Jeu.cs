@@ -5,16 +5,23 @@ class Jeu
 {
     // Liste de mots pour le jeu
     private string[] mots = {
-        "ordinateur", "programmation", "developpeur",
-        "nissa", "safaa", "clavier", "souris",
-        "ecran", "internet", "logiciel", "ynov",
-        "riot", "marseille", "football", "basketball",
-        "tennis", "voiture", "avion", "bateau",
-        "montagne", "plage"
+        "ohana", "lilo", "stitch", "hawai", "alien",
+        "experience626", "jumba", "pleakley", "nani",
+        "cobra", "bubbles", "ukulele", "surf", "plage",
+        "soleil", "mer", "tropical", "ile",
+        "famille", "amitie", "amour",
+        "bleu", "rose", "monstre", "extraterrestre",
+        "galaxie", "vaisseau", "espace",
+        "chaos", "energie", "sauvage",
+        "vacances", "cocotier", "hamac",
+        "ohanaforever", "mignon",
+        "destructeur", "stitcha"
     };
 
     // Variables de jeu
     private string motSecret = "";
+
+    // Creation d'un tableau vide avec des char pour stocker le mot caché, on le remplira avec des '_' et les lettres trouvées
     private char[] motCache = Array.Empty<char>();
     private int vies = 6;
 
@@ -71,7 +78,7 @@ class Jeu
         Console.WriteLine("Jeu du pendu");
         Console.WriteLine("====================");
 
-        // Affiche le mot caché avec des espaces entre les lettres
+        // Affiche le mot caché avec des espaces entre les lettres string.join evite d'afficher system.char[]
         Console.WriteLine("Mot : " + string.Join(" ", motCache));
         Console.WriteLine("Vies restantes : " + vies);
         Console.WriteLine("Lettres testées : " + string.Join(", ", lettresTestees));
